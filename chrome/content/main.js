@@ -77,12 +77,23 @@ MoreOfTheSame.Controller = {
     this._commandsManager.registerPlaylistCommandsMediaItem(this._mainLibraryGUID, "", this._mainLibCommandsBuilder);
     
     this._simplePlaylistsCommandsBuilder = this.getCommandsBuilder();
+    
     var simplePlaylistRegisteredCommands = this._commandsManager.getPlaylistCommandsMediaItem("", "simple");
-    //if (!simplePlaylistRegisteredCommands || !simplePlaylistRegisteredCommands.hasMoreElements()) 
-    //{
+
+	  // Hack to get around problems when the Now Playing addon is installed 
+	  var commandCount = 0;
+	  if (simplePlaylistRegisteredCommands) {
+	    while (simplePlaylistRegisteredCommands.hasMoreElements()) {
+			  var tempItem = simplePlaylistRegisteredCommands.getNext();
+	      commandCount++;
+	    }
+    }
+	
+    if (commandCount <= 6) 
+    {
       this._simplePlaylistsCommandsBuilder.insertPlaylistCommandsBefore(null, "moreOfTheSameSeparatorId", "defaultCommandSet2", 
             this._commandsManager.request(kPlaylistCommands.MEDIAITEM_DEFAULT));
-    //}
+    }
     this._commandsManager.registerPlaylistCommandsMediaItem("", "simple", this._simplePlaylistsCommandsBuilder);
     
     this._smartPlaylistsCommandsBuilder = this.getCommandsBuilder();
