@@ -1,0 +1,55 @@
+<?xml version="1.0"?> 
+
+<?xml-stylesheet href="chrome://more-of-the-same/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://more-of-the-same/locale/overlay.dtd">
+<overlay
+  id="more-of-the-same-toolbar-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <!-- Add the toolbar button into the browser toolbar palette so that
+         the user can show/hide it as desired -->
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton  id="more-of-the-same-toolbarbutton" 
+                        label="&more-of-the-same.toolbar-button.label;"
+                        tooltiptext="&more-of-the-same.toolbar-button.label;" 
+                        class="toolbarbutton-1 chromeclass-toolbar-additional" 
+                        type="menu">
+          <menupopup id="more-of-the-same-tb-menu" orient="vertical">
+            <menuitem id="more-of-the-same-tb-intro-text" label="&more-of-the-same.tb-intro-text.label;" disabled="true" />
+            <menuseparator id="more-of-the-same-tb-separator" />
+            <menuitem id="more-of-the-same-tb-album-menuitem" 
+                      label="&more-of-the-same.tb-album-menuitem.label;"
+                      command="more-of-the-same-current-album-cmd" />
+            <menuitem id="more-of-the-same-tb-artist-menuitem" 
+                      label="&more-of-the-same.tb-artist-menuitem.label;"
+                      command="more-of-the-same-current-artist-cmd" />
+            <menuitem id="more-of-the-same-tb-genre-menuitem" 
+                      label="&more-of-the-same.tb-genre-menuitem.label;"
+                      command="more-of-the-same-current-genre-cmd" />
+            <menuitem id="more-of-the-same-tb-year-menuitem" 
+                      label="&more-of-the-same.tb-year-menuitem.label;"
+                      command="more-of-the-same-current-year-cmd" />
+            <menuitem id="more-of-the-same-tb-album-artist-menuitem" 
+                      label="&more-of-the-same.tb-album-artist-menuitem.label;"
+                      command="more-of-the-same-current-album-artist-cmd" />
+            <menuseparator id="more-of-the-same-tb-separator2" />
+            <menuitem id="more-of-the-same-tb-sel-album-menuitem" 
+                      label="&more-of-the-same.tb-sel-album-menuitem.label;"
+                      command="more-of-the-same-sel-album-cmd" />
+            <menuitem id="more-of-the-same-tb-sel-artist-menuitem" 
+                      label="&more-of-the-same.tb-sel-artist-menuitem.label;"
+                      command="more-of-the-same-sel-artist-cmd" />
+            <menuitem id="more-of-the-same-tb-sel-genre-menuitem" 
+                      label="&more-of-the-same.tb-sel-genre-menuitem.label;"
+                      command="more-of-the-same-sel-genre-cmd" />
+            <menuitem id="more-of-the-same-tb-sel-year-menuitem" 
+                      label="&more-of-the-same.tb-sel-year-menuitem.label;"
+                      command="more-of-the-same-sel-year-cmd" />
+            <menuitem id="more-of-the-same-tb-sel-album-artist-menuitem" 
+                      label="&more-of-the-same.tb-sel-album-artist-menuitem.label;"
+                      command="more-of-the-same-sel-album-artist-cmd" />
+          </menupopup>
+        </toolbarbutton>
+    </toolbarpalette>
+
+</overlay>

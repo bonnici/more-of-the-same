@@ -1,0 +1,13 @@
+<!ENTITY more-of-the-same.toolbar-button.label "Finde mehr von">
+<!ENTITY more-of-the-same.helloworld.accesskey "H">
+<!ENTITY more-of-the-same.tb-intro-text.label "Finde mehr von...">
+<!ENTITY more-of-the-same.tb-album-menuitem.label "Aktuelles Album">
+<!ENTITY more-of-the-same.tb-artist-menuitem.label "Aktueller Interpret">
+<!ENTITY more-of-the-same.tb-genre-menuitem.label "Aktuelles Genre">
+<!ENTITY more-of-the-same.tb-year-menuitem.label "Aktuelles Jahr">
+<!ENTITY more-of-the-same.tb-album-artist-menuitem.label "Aktueller Albuminterpret">
+<!ENTITY more-of-the-same.tb-sel-album-menuitem.label "Markiertes Album">
+<!ENTITY more-of-the-same.tb-sel-artist-menuitem.label "Markierter Interpret">
+<!ENTITY more-of-the-same.tb-sel-genre-menuitem.label "Markiertes Genre">
+<!ENTITY more-of-the-same.tb-sel-year-menuitem.label "Markiertes Jahr">
+<!ENTITY more-of-the-same.tb-sel-album-artist-menuitem.label "Markierter Albuminterpret">
