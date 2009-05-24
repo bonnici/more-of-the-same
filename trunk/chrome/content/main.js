@@ -34,10 +34,15 @@ MoreOfTheSame.Controller = {
     
     // Perform extra actions the first time the extension is run
     //Cu.reportError(Application.prefs.get("extensions.more-of-the-same.firstrun").value);
-    if (Application.prefs.get("extensions.more-of-the-same.firstrun-v104").value) {
-      Application.prefs.setValue("extensions.more-of-the-same.firstrun-v104", false);
+    if (Application.prefs.get("extensions.more-of-the-same.firstrun-v105").value) {
+      Application.prefs.setValue("extensions.more-of-the-same.firstrun-v105", false);
       this._firstRunSetup();
     }
+    
+    // Add the toolbar button to the default item set of the browser toolbar.
+    // TODO: Should only do this on first run, but Bug 6778 requires doing it
+    // every load.
+    this._insertToolbarItem("nav-bar", "more-of-the-same-toolbarbutton", "searchbar-container");
     
     // Make a local variable for this controller so that
     // it is easy to access from closures.
@@ -220,60 +225,30 @@ MoreOfTheSame.Controller = {
    */
   _firstRunSetup : function() 
   {
-    this._insertToolbarItem("nav-bar", "more-of-the-same-toolbarbutton", "searchbar-container");
+    //this._insertToolbarItem("nav-bar", "more-of-the-same-toolbarbutton", "searchbar-container");
   },
   
-  _addToolbarButtonIfNeeded: function() {
-    var toolbar = document.getElementById("nav-bar");
-    var list = toolbar.currentSet || "";
-    alert("list = " + list)
-    list = list.split(",");
-      
-    var index = list.indexOf("more-of-the-same-toolbarbutton");
-    insertBefore = list.indexOf("searchbar-container");
-    if (index == -1) {
-      list.splice(insertBefore, 0, "more-of-the-same-toolbarbutton");
-      list = list.join(",");
-      toolbar.setAttribute("currentset", list);
-      toolbar.currentSet = list;
-    }
-  },
-
-  /**
-   * Helper to add a toolbaritem within a given toolbar
-   * 
-   *   toolbar - the ID of a toolbar element
-   *   newItem - the ID of a toolbaritem element within the 
-   *            associated toolbarpalette
-   *   insertBefore - ID of an toolbaritem before which newItem should appear
-   */
-  _insertToolbarItem: function(toolbar, newItem, insertBefore) 
-  {
+  _insertToolbarItem: function(toolbar, newItem, insertBefore) {
     var toolbar = document.getElementById(toolbar);
     var list = toolbar.currentSet || "";
     list = list.split(",");
     
-    //remove the item so it gets readded
-    /*
-    var index = list.indexOf(newItem);
-	
-    if (index != -1)
+    // If this item is not already in the current set, add it
+    if (list.indexOf(newItem) == -1)
     {
-      list.splice(index, 1);
-    }
-    */
-	
-    // Add to the array, then recombine
-    insertBefore = list.indexOf(insertBefore);
-    if (insertBefore == -1) {
-      list.push(newItem);
-    } else {
-      list.splice(insertBefore, 0, newItem);
-    }
-    list = list.join(",");
+      // Add to the array, then recombine
+      insertBefore = list.indexOf(insertBefore);
+      if (insertBefore == -1) {
+        list.push(newItem);
+      } else {
+        list.splice(insertBefore - 1, 0, newItem);
+      }
+      list = list.join(",");
       
-    toolbar.setAttribute("currentset", list);
-    toolbar.currentSet = list;
+      toolbar.setAttribute("currentset", list);
+      toolbar.currentSet = list;
+      document.persist(toolbar.id, "currentset");
+    }
   },
   
   createNpPlaylist: function(property)
