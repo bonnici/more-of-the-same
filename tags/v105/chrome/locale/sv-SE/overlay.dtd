@@ -1,0 +1,13 @@
+<!ENTITY more-of-the-same.toolbar-button.label "Mer av Samma">
+<!ENTITY more-of-the-same.helloworld.accesskey "H">
+<!ENTITY more-of-the-same.tb-intro-text.label "Mer av Samma...">
+<!ENTITY more-of-the-same.tb-album-menuitem.label "Nuvarande Album">
+<!ENTITY more-of-the-same.tb-artist-menuitem.label "Nuvarande Artist">
+<!ENTITY more-of-the-same.tb-genre-menuitem.label "Nuvarande Genre">
+<!ENTITY more-of-the-same.tb-year-menuitem.label "Nuvarande År">
+<!ENTITY more-of-the-same.tb-album-artist-menuitem.label "Nuvarande Album Artist">
+<!ENTITY more-of-the-same.tb-sel-album-menuitem.label "Valt Album">
+<!ENTITY more-of-the-same.tb-sel-artist-menuitem.label "Vald Artist">
+<!ENTITY more-of-the-same.tb-sel-genre-menuitem.label "Vald Genre">
+<!ENTITY more-of-the-same.tb-sel-year-menuitem.label "Valt År">
+<!ENTITY more-of-the-same.tb-sel-album-artist-menuitem.label "Vald Album Artist">
