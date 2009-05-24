@@ -8,6 +8,7 @@
     <em:version>1.0.5</em:version>
     <em:creator>Nick Marsh</em:creator>
     <em:iconURL>chrome://more-of-the-same/skin/icon.png</em:iconURL>
+    <em:homepageURL>http://addons.songbirdnest.com/addon/1395</em:homepageURL>
 
     <em:description>Shows tracks from your library that are related to a selected track</em:description>
 
