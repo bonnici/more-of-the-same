@@ -5,7 +5,7 @@
     <em:id>{dc29ccec-fa18-144b-9b77-98b7debf3904}</em:id>
     <em:type>2</em:type>
     <em:name>More of the Same</em:name>
-    <em:version>1.0.4</em:version>
+    <em:version>1.0.5</em:version>
     <em:creator>Nick Marsh</em:creator>
     <em:iconURL>chrome://more-of-the-same/skin/icon.png</em:iconURL>
 
@@ -20,8 +20,8 @@
     <em:targetApplication>
       <Description>
         <em:id>songbird@songbirdnest.com</em:id>
-        <em:minVersion>1.0.0</em:minVersion>
-        <em:maxVersion>1.2.0a</em:maxVersion>
+        <em:minVersion>1.1.1</em:minVersion>
+        <em:maxVersion>1.2.*</em:maxVersion>
       </Description>
     </em:targetApplication>
 
