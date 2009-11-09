@@ -4,7 +4,9 @@ locale  more-of-the-same  de-DE  chrome/locale/de-DE/
 locale  more-of-the-same  fr-FR  chrome/locale/fr-FR/
 locale  more-of-the-same  sv-SE  chrome/locale/sv-SE/
 locale  more-of-the-same  ru-RU  chrome/locale/ru-RU/
-locale  more-of-the-same  zh-TW  chrome/locale/zh-TW
+locale  more-of-the-same  zh-TW  chrome/locale/zh-TW/
+locale  more-of-the-same  pt-BR  chrome/locale/pt-BR/
+locale  more-of-the-same  tr-TR  chrome/locale/tr-TR/
 skin    more-of-the-same  classic/1.0 chrome/skin/
 
 
