@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://more-of-the-same/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://more-of-the-same/locale/overlay.dtd">
+<overlay id="more-of-the-same-menu-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  
+  <!-- Add a command.  See http://www.xulplanet.com/tutorials/xultu/commands.html -->  
+  <commandset id="mainCommandSet">
+    <command id="more-of-the-same-current-album-cmd" />
+    <command id="more-of-the-same-current-artist-cmd" />
+    <command id="more-of-the-same-current-genre-cmd" />
+    <command id="more-of-the-same-current-year-cmd" />
+    <command id="more-of-the-same-current-album-artist-cmd" />
+    <command id="more-of-the-same-sel-album-cmd" />
+    <command id="more-of-the-same-sel-artist-cmd" />
+    <command id="more-of-the-same-sel-genre-cmd" />
+    <command id="more-of-the-same-sel-year-cmd" />
+    <command id="more-of-the-same-sel-album-artist-cmd" />
+  </commandset>
+  
+</overlay>
