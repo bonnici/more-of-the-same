@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<!-- This just imports a css file that hides the status bar buttons. -->
+
+<?xml-stylesheet href="chrome://more-of-the-same/skin/playlist.css" type="text/css"?>
+
+<overlay id="more-of-the-same-playlist-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+          
+</overlay>
