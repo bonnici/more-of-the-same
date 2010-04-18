@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+     xmlns:songbird="http://www.songbirdnest.com/2007/addon-metadata-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{dc29ccec-fa18-144b-9b77-98b7debf3904}</em:id>
+    <em:type>2</em:type>
+    <em:name>More of the Same</em:name>
+    <em:version>1.0.10</em:version>
+    <em:creator>Nick Marsh</em:creator>
+    <em:iconURL>chrome://more-of-the-same/skin/icon.png</em:iconURL>
+    <em:homepageURL>http://addons.songbirdnest.com/addon/1395</em:homepageURL>
+
+    <em:description>Shows tracks from your library that are related to a selected track</em:description>
+
+    <em:contributor>nkler (de-DE translation)</em:contributor>
+    <em:contributor>Goofy (fr-FR translation)</em:contributor>
+    <em:contributor>Schwadegan (sv-SE translation)</em:contributor>
+    <em:contributor>Quicksilver (ru-RU translation)</em:contributor>
+    <em:contributor>josesun (zh-TW translation)</em:contributor>
+    <em:contributor>Ghelman (pt-BR translation)</em:contributor>
+    <em:contributor>erkanyv (tr-TR translation)</em:contributor>
+    <em:contributor>BruceH (zh-CN translation)</em:contributor>
+
+    <em:targetApplication>
+      <Description>
+        <em:id>songbird@songbirdnest.com</em:id>
+        <em:minVersion>1.4.1</em:minVersion>
+        <em:maxVersion>1.7.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+  </Description>
+</RDF>

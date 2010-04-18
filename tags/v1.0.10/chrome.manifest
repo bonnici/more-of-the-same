@@ -1,0 +1,17 @@
+content more-of-the-same  chrome/content/
+locale  more-of-the-same  en-US  chrome/locale/en-US/
+locale  more-of-the-same  de-DE  chrome/locale/de-DE/
+locale  more-of-the-same  fr-FR  chrome/locale/fr-FR/
+locale  more-of-the-same  sv-SE  chrome/locale/sv-SE/
+locale  more-of-the-same  ru-RU  chrome/locale/ru-RU/
+locale  more-of-the-same  zh-TW  chrome/locale/zh-TW/
+locale  more-of-the-same  pt-BR  chrome/locale/pt-BR/
+locale  more-of-the-same  tr-TR  chrome/locale/tr-TR/
+locale  more-of-the-same  zh-CN  chrome/locale/zh-CN/
+skin    more-of-the-same  classic/1.0 chrome/skin/
+
+
+overlay chrome://songbird/content/xul/layoutWithBrowserOverlay.xul chrome://more-of-the-same/content/scripts-overlay.xul
+overlay chrome://songbird/content/xul/layoutWithBrowserOverlay.xul chrome://more-of-the-same/content/toolbar-overlay.xul
+overlay chrome://songbird/content/xul/layoutWithBrowserOverlay.xul chrome://more-of-the-same/content/commands-overlay.xul
+overlay chrome://songbird/content/xul/mediaPageOverlay.xul chrome://more-of-the-same/content/playlist-overlay.xul

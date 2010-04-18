@@ -1,0 +1,13 @@
+<!ENTITY more-of-the-same.toolbar-button.label "More of the Same">
+<!ENTITY more-of-the-same.helloworld.accesskey "H">
+<!ENTITY more-of-the-same.tb-intro-text.label "More of the Same...">
+<!ENTITY more-of-the-same.tb-album-menuitem.label "Текущий альбом">
+<!ENTITY more-of-the-same.tb-artist-menuitem.label "Текущий исполнитель">
+<!ENTITY more-of-the-same.tb-genre-menuitem.label "Текущий жанр">
+<!ENTITY more-of-the-same.tb-year-menuitem.label "Текущий год">
+<!ENTITY more-of-the-same.tb-album-artist-menuitem.label "Текущий исполнитель альбома">
+<!ENTITY more-of-the-same.tb-sel-album-menuitem.label "Выбранный альбом">
+<!ENTITY more-of-the-same.tb-sel-artist-menuitem.label "Выбранный исполнитель">
+<!ENTITY more-of-the-same.tb-sel-genre-menuitem.label "Выбранный жанр">
+<!ENTITY more-of-the-same.tb-sel-year-menuitem.label "Выбранный год">
+<!ENTITY more-of-the-same.tb-sel-album-artist-menuitem.label "Выбранный исполнитель альбома">

@@ -1,0 +1,13 @@
+<!ENTITY more-of-the-same.toolbar-button.label "More of the Same">
+<!ENTITY more-of-the-same.helloworld.accesskey "H">
+<!ENTITY more-of-the-same.tb-intro-text.label "More of the Same...">
+<!ENTITY more-of-the-same.tb-album-menuitem.label "正在播放的專輯">
+<!ENTITY more-of-the-same.tb-artist-menuitem.label "正在播放的演出者">
+<!ENTITY more-of-the-same.tb-genre-menuitem.label "正在播放的類別">
+<!ENTITY more-of-the-same.tb-year-menuitem.label "正在播放的年份">
+<!ENTITY more-of-the-same.tb-album-artist-menuitem.label "正在播放的專輯演出者">
+<!ENTITY more-of-the-same.tb-sel-album-menuitem.label "目前選擇的專輯">
+<!ENTITY more-of-the-same.tb-sel-artist-menuitem.label "目前選擇的演出者">
+<!ENTITY more-of-the-same.tb-sel-genre-menuitem.label "目前選擇的類別">
+<!ENTITY more-of-the-same.tb-sel-year-menuitem.label "目前選擇的年份">
+<!ENTITY more-of-the-same.tb-sel-album-artist-menuitem.label "目前選擇的專輯演出者">
